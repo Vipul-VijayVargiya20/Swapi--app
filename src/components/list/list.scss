@@ -1,0 +1,60 @@
+@import '../../App.scss';
+
+.listItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+  @media screen and (max-width:500px) {
+    flex-direction: column;
+  }
+}
+
+.listContainer {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.listItemDiv {
+  text-transform: capitalize;
+  width: 40%;
+  :hover{
+    background-color: $secondaryColor;
+    color: $textSecondary;
+  }
+  
+  a {
+    color: $textPrimary;
+    align-items: center;
+    display: flex;
+    font-size: 5vh;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 15vh;
+    overflow: hidden;
+
+    @media screen and (max-width:500px) {
+      font-size: 4vh;
+    }
+  }
+
+  a img {
+    mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient( to right,transparent, black 0%, black 60%, transparent 100%);
+    width: 7vw;
+
+    @media screen and (max-width:500px) {
+      width: 20vw;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    width: 90%;
+  }
+}
+
