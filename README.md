@@ -1,7 +1,8 @@
-<!-- Starwars API -->
+<!-- Starwars API  = http://localhost:3000-->
 
 <!-- 
  Open Starwars API (https://swapi.dev/)
+
  You need to create a screen with Lists of all the Characters available from the endpoint (https://swapi.dev/api/people/) (
      - You should be able to paginate through the data
      - (Bonus) Be able to mark certain characters as favourites and store them on client side so that killing the session does not lose it.
